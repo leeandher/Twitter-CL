@@ -1,0 +1,19 @@
+{
+  "name": "twitter-from-cli",
+  "version": "1.0.0",
+  "description": "A command-line tool for interfacing with Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeandher/Twitter-from-CLI.git"
+  },
+  "author": "Leander Rodrigues <me@leander.xyz> (https://leander.xyz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeandher/Twitter-from-CLI/issues"
+  },
+  "homepage": "https://github.com/leeandher/Twitter-from-CLI#readme"
+}
