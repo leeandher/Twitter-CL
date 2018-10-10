@@ -1,8 +1,20 @@
 #!/usr/bin/env node
+require("dotenv").config();
+const Twit = require("twit");
 
-// Grab provided args
-const [, , ...args] = process.argv;
+const T = new Twit({
+  consumer_key: process.env.CONSUMER_KEY,
+  consumer_secret: process.env.CONSUMER_SECRET,
+  access_token: process.env.ACCESS_TOKEN,
+  access_token_secret: process.env.ACCESS_TOKEN_SECRET
+  // timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
+  // strictSSL: true // optional - requires SSL certificates to be valid.
+});
 
-//Print hello world provided args.
-console.log(`Hello World ${args}`);
-console.log(process.argv);
+T.get("search/tweets", { q: "banana since:2011-07-11", count: 100 }, function(
+  err,
+  data,
+  response
+) {
+  console.log(data);
+});

@@ -20,6 +20,7 @@
     "tcli": "./cli.js"
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
     "twit": "^2.2.11"
   }
 }
