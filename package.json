@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/leeandher/Twitter-from-CLI/issues"
   },
-  "homepage": "https://github.com/leeandher/Twitter-from-CLI#readme"
+  "homepage": "https://github.com/leeandher/Twitter-from-CLI#readme",
+  "bin": {
+    "tcli": "./cli.js"
+  },
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
 }
