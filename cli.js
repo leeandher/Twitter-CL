@@ -12,6 +12,7 @@ const T = new twit({
 });
 
 const track = "lit";
+const re = new RegExp(track, "gi");
 const stream = T.stream("statuses/filter", { track });
 
 stream.on("tweet", function(tweet) {
@@ -20,7 +21,7 @@ stream.on("tweet", function(tweet) {
       chalk.cyanBright.bold(`${tweet.user.name} (@${tweet.user.screen_name})`)
     );
 
-    log(tweet.text);
+    log(tweet.text.replace(re, chalk.yellow(track)));
     log("");
   }
 });
