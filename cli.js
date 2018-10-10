@@ -15,8 +15,12 @@ const track = "lit";
 const stream = T.stream("statuses/filter", { track });
 
 stream.on("tweet", function(tweet) {
-  log(chalk.blue.bold(`${tweet.user.name} (@${tweet.user.screen_name})`));
+  if (tweet.user.lang === "en") {
+    log(
+      chalk.cyanBright.bold(`${tweet.user.name} (@${tweet.user.screen_name})`)
+    );
 
-  log(`"${tweet.text}"`);
-  log("");
+    log(tweet.text);
+    log("");
+  }
 });
