@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/leeandher/Twitter-from-CLI#readme",
   "bin": {
-    "tcli": "./cli.js"
+    "tcli": "./cli.js",
+    "100doc": "./100DOC.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",

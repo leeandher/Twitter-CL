@@ -11,17 +11,11 @@ const T = new twit({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-const track = "kanye";
-const re = new RegExp(track, "gi");
-const stream = T.stream("statuses/filter", { track });
-
-stream.on("tweet", function(tweet) {
-  if (tweet.user.lang === "en") {
-    log(
-      chalk.cyanBright.bold(`${tweet.user.name} (@${tweet.user.screen_name})`)
-    );
-
-    log(tweet.text.replace(re, chalk.yellow(track)));
-    log("");
-  }
+const templateTweet = `#100DaysOfCode Day 011: JS30 29, some 'Bi-directional Data Flow' through React, and got oriented with 'react-transition-group'. --Tweeted from CLI (https://github.com/leeandher/twitter-from-cli)`;
+T.post("statuses/update", { status: templateTweet }, function(
+  err,
+  data,
+  response
+) {
+  console.log(data);
 });
