@@ -12,10 +12,8 @@ const T = new twit({
 });
 
 const templateTweet = `#100DaysOfCode Day 011: JS30 29, some 'Bi-directional Data Flow' through React, and got oriented with 'react-transition-group'. --Tweeted from CLI (https://github.com/leeandher/twitter-from-cli)`;
-T.post("statuses/update", { status: templateTweet }, function(
-  err,
-  data,
-  response
-) {
+T.post("statuses/update", { status: templateTweet }, function(data) {
   console.log(data);
 });
+
+//To-do: dive into the twit package and disect, see if i can make my own functions
