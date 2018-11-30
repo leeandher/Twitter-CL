@@ -1,6 +1,6 @@
 {
-  "name": "twitter-from-cli",
-  "version": "1.0.0",
+  "name": "twitter-cl",
+  "version": "0.0.1",
   "description": "A command-line tool for interfacing with Twitter",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/leeandher/Twitter-from-CLI#readme",
   "bin": {
-    "tcli": "./cli.js",
-    "100doc": "./100DOC.js"
+    "twitter-cli": "./index.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
