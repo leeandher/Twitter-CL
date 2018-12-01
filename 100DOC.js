@@ -19,3 +19,18 @@ console.log;
 // });
 
 //To-do: dive into the twit package and disect, see if i can make my own functions
+
+// const track = "kanye";
+// const re = new RegExp(track, "gi");
+// const stream = T.stream("statuses/filter", { track });
+
+// stream.on("tweet", function(tweet) {
+//   if (tweet.user.lang === "en") {
+//     log(
+//       chalk.cyanBright.bold(`${tweet.user.name} (@${tweet.user.screen_name})`)
+//     );
+
+//     log(tweet.text.replace(re, chalk.yellow(track)));
+//     log("");
+//   }
+// });
