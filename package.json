@@ -1,33 +1,63 @@
 {
   "name": "twitter-cl",
-  "version": "0.1.0",
-  "description": "A command-line tool for interfacing with Twitter",
-  "main": "tcli.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leeandher/Twitter-from-CLI.git"
-  },
-  "author": "Leander Rodrigues <me@leander.xyz> (https://leander.xyz)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leeandher/Twitter-from-CLI/issues"
-  },
-  "homepage": "https://github.com/leeandher/Twitter-from-CLI#readme",
+  "description": "A command line tool for interacting with Twitter",
+  "version": "1.0.0",
+  "author": "Leander Rodrigues @leeandher",
   "bin": {
-    "tcli": "./tcli.js"
+    "tcl": "./bin/run"
   },
+  "bugs": "https://github.com/leeandher/twitter-cl/issues",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "co": "^4.6.0",
-    "co-prompt": "^1.0.0",
-    "commander": "^2.19.0",
-    "dotenv": "^6.1.0",
-    "twit": "^2.2.11"
+    "@oclif/command": "^1.5.8",
+    "@oclif/config": "^1.10.4",
+    "@oclif/plugin-help": "^2.1.4",
+    "tslib": "^1.9.3"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
-  }
+    "@oclif/dev-cli": "^1.21.0",
+    "@oclif/test": "^1.2.2",
+    "@oclif/tslint": "^3.1.1",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "chai": "^4.2.0",
+    "globby": "^8.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "rimraf": "^2.6.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/leeandher/twitter-cl",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "tcl",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "leeandher/twitter-cl",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
 }
