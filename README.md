@@ -13,18 +13,14 @@ A useful tool for those who prefer to interact with the terminal instead of the 
 [![License](https://img.shields.io/npm/l/twitter-cl.svg)](https://github.com/leeandher/twitter-cl/blob/master/package.json)
 
 <!-- toc -->
-
-- [twitter-cl](#twitter-cl)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`tcl hello [FILE]`](#tcl-hello-file)
-  - [`tcl help [COMMAND]`](#tcl-help-command)
-    <!-- tocstop -->
+* [twitter-cl](#twitter-cl)
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g twitter-cl
 $ tcl COMMAND
@@ -36,15 +32,30 @@ USAGE
   $ tcl COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
+* [`tcl config [FILE]`](#tcl-config-file)
+* [`tcl hello [FILE]`](#tcl-hello-file)
+* [`tcl help [COMMAND]`](#tcl-help-command)
 
-- [`tcl hello [FILE]`](#tcl-hello-file)
-- [`tcl help [COMMAND]`](#tcl-help-command)
+## `tcl config [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ tcl config [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.0/src\commands\config.ts)_
 
 ## `tcl hello [FILE]`
 
@@ -82,5 +93,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.4/src\commands\help.ts)_
-
 <!-- commandsstop -->
