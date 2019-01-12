@@ -14,9 +14,12 @@ A useful tool for those who prefer to interact with the terminal instead of the 
 
 <!-- toc -->
 
+- [twitter-cl](#twitter-cl)
 - [Usage](#usage)
 - [Commands](#commands)
-  <!-- tocstop -->
+  - [`tcl hello [FILE]`](#tcl-hello-file)
+  - [`tcl help [COMMAND]`](#tcl-help-command)
+    <!-- tocstop -->
 
 # Usage
 
@@ -40,11 +43,8 @@ USAGE
 
 <!-- commands -->
 
-- [twitter-cl](#twitter-cl)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`tcl hello [FILE]`](#tcl-hello-file)
-  - [`tcl help [COMMAND]`](#tcl-help-command)
+- [`tcl hello [FILE]`](#tcl-hello-file)
+- [`tcl help [COMMAND]`](#tcl-help-command)
 
 ## `tcl hello [FILE]`
 
