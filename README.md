@@ -26,7 +26,7 @@ $ npm install -g twitter-cl
 $ tcl COMMAND
 running command...
 $ tcl (-v|--version|version)
-twitter-cl/1.0.0 win32-x64 node-v11.6.0
+twitter-cl/0.0.1 win32-x64 node-v11.6.0
 $ tcl --help [COMMAND]
 USAGE
   $ tcl COMMAND
@@ -56,7 +56,7 @@ DESCRIPTION
   NOTE: This requires API keys from https://developer.twitter.com!
 ```
 
-_See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.0/src\commands\config.ts)_
+_See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\config.ts)_
 
 ## `tcl hello [FILE]`
 
@@ -76,7 +76,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src\commands\hello.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.0/src\commands\hello.ts)_
+_See code: [src\commands\hello.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\hello.ts)_
 
 ## `tcl help [COMMAND]`
 
