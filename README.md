@@ -37,22 +37,23 @@ USAGE
 # Commands
 
 <!-- commands -->
-* [`tcl config [FILE]`](#tcl-config-file)
+* [`tcl config`](#tcl-config)
 * [`tcl hello [FILE]`](#tcl-hello-file)
 * [`tcl help [COMMAND]`](#tcl-help-command)
 
-## `tcl config [FILE]`
+## `tcl config`
 
-describe the command here
+Setup your account credentials.
 
 ```
 USAGE
-  $ tcl config [FILE]
+  $ tcl config
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
+
+DESCRIPTION
+  NOTE: This requires API keys from https://developer.twitter.com!
 ```
 
 _See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.0/src\commands\config.ts)_
