@@ -5,7 +5,11 @@ import * as Twitter from 'twitter'
 export const client = (configPath: string): object => {
   if (fs.existsSync(`${configPath}/creds.json`)) {
     const creds = fs.readFileSync(`${configPath}/creds.json`)
-    return new Twitter(creds)
+    console.log(creds)
+    // return new Twitter(creds)
+    return {}
   }
   throw new Error('Invalid Credentials')
 }
+
+client('C:/Users/leand/AppData/twitter-cl')
