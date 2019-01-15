@@ -26,7 +26,7 @@ $ npm install -g twitter-cl
 $ tcl COMMAND
 running command...
 $ tcl (-v|--version|version)
-twitter-cl/0.0.1 win32-x64 node-v11.6.0
+twitter-cl/0.0.1 darwin-x64 node-v10.13.0
 $ tcl --help [COMMAND]
 USAGE
   $ tcl COMMAND
@@ -40,6 +40,7 @@ USAGE
 * [`tcl config`](#tcl-config)
 * [`tcl hello [FILE]`](#tcl-hello-file)
 * [`tcl help [COMMAND]`](#tcl-help-command)
+* [`tcl stream [FILE]`](#tcl-stream-file)
 
 ## `tcl config`
 
@@ -56,7 +57,7 @@ DESCRIPTION
   NOTE: This requires API keys from https://developer.twitter.com!
 ```
 
-_See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\config.ts)_
+_See code: [src/commands/config.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src/commands/config.ts)_
 
 ## `tcl hello [FILE]`
 
@@ -76,7 +77,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src\commands\hello.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `tcl help [COMMAND]`
 
@@ -93,5 +94,21 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.4/src\commands\help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.4/src/commands/help.ts)_
+
+## `tcl stream [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ tcl stream [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/stream.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src/commands/stream.ts)_
 <!-- commandsstop -->
