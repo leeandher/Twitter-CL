@@ -46,11 +46,19 @@ export default class Stream extends Command {
     stream.on('error', error => this.error(error))
     stream.on('data', data => {
       const styledText = flags.word
-        ? data.text.replace(
-            new RegExp(flags.word.split(',').join('|'), 'gm'),
-            chalk.yellow(flags.word)
-          )
+        ? data.text
+            .split(' ')
+            .map(
+              (str: string) =>
+                flags.word &&
+                str.replace(
+                  new RegExp(flags.word.replace(',', '|'), 'gm'),
+                  chalk.yellow(str)
+                )
+            )
+            .join(' ')
         : ''
+
       this.log(
         `\n${chalk.cyan(`@${data.user.screen_name}`)}: ${styledText ||
           data.text}`
