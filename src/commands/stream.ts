@@ -38,7 +38,7 @@ export default class Stream extends Command {
       }
     }
 
-    // Stream the tweets live
+    // Stream the tweets
     const stream = T.stream('statuses/filter', {
       track: flags.word,
       follow: userHandles
