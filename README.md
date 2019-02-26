@@ -2,7 +2,7 @@
 
 A useful tool for those who prefer to interact with the terminal instead of the normal Twitter User Experience
 
- | 🚨🚨 This project is still in development! Feel free to make PRs and Issues for mistakes and/or suggestions! 🚨🚨
+ > 🚨 This project is still in development! Feel free to make PRs and Issues for mistakes and/or suggestions! 🚨
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/twitter-cl.svg)](https://npmjs.org/package/twitter-cl)
