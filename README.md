@@ -4,11 +4,9 @@ A useful tool for those who prefer to interact with the terminal instead of the 
 
  > 🚨 This project is still in development! Feel free to make PRs and Issues for mistakes and/or suggestions! 🚨
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![oclif](https://img.shields.io/badge/cli-oclif-blueviolet.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/twitter-cl.svg)](https://npmjs.org/package/twitter-cl)
 [![CircleCI](https://circleci.com/gh/leeandher/twitter-cl/tree/master.svg?style=shield)](https://circleci.com/gh/leeandher/twitter-cl/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/leeandher/twitter-cl?branch=master&svg=true)](https://ci.appveyor.com/project/leeandher/twitter-cl/branch/master)
-[![Codecov](https://codecov.io/gh/leeandher/twitter-cl/branch/master/graph/badge.svg)](https://codecov.io/gh/leeandher/twitter-cl)
 [![Downloads/week](https://img.shields.io/npm/dw/twitter-cl.svg)](https://npmjs.org/package/twitter-cl)
 [![License](https://img.shields.io/npm/l/twitter-cl.svg)](https://github.com/leeandher/twitter-cl/blob/master/package.json)
 
