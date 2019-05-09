@@ -1,0 +1,12 @@
+{
+  "config": {},
+  "tweet": {
+    "help": {
+      "description": "That sweet content that you want to put out there"
+    },
+    "preview": "You are about to tweet the following:",
+    "confirm": "Post your tweet?",
+    "complete": "Posted successfully!",
+    "prelink": "Check it out here:"
+  }
+}
