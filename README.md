@@ -1,6 +1,6 @@
 # twitter-cl
 
-A useful tool for interacting with the Twitter from command line instead of the normal Twitter UI. Built from scratch with [Node.js], [Twitter NPM] and [Oclif]
+A useful tool for interacting with the Twitter from command line instead of the normal Twitter UI. Built from scratch with [Node.js](https://nodejs.org/en/), [Twitter NPM](https://www.npmjs.com/package/twitter) and [oclif](https://oclif.io/)
 
 > 🚨 This project is still in development! Feel free to make PRs and Issues for mistakes and/or suggestions! 🚨
 
@@ -9,6 +9,14 @@ A useful tool for interacting with the Twitter from command line instead of the 
 [![CircleCI](https://circleci.com/gh/leeandher/twitter-cl/tree/master.svg?style=shield)](https://circleci.com/gh/leeandher/twitter-cl/tree/master)
 [![Downloads/week](https://img.shields.io/npm/dw/twitter-cl.svg)](https://npmjs.org/package/twitter-cl)
 [![License](https://img.shields.io/npm/l/twitter-cl.svg)](https://github.com/leeandher/twitter-cl/blob/master/package.json)
+
+# ⚡ Quick Start
+
+```sh-session
+$ npm i -g twitter-cl
+$ tcl config
+$ tcl tweet "Hello World!"
+```
 
 # ⛏️ Usage
 
