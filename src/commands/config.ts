@@ -78,7 +78,7 @@ export default class Config extends Command {
       this.config.windows ? '\\' : '/'
     }creds.json`
     try {
-      fs.writeFileSync(credsFile, JSON.stringify(configAnswers))
+      // fs.writeFileSync(credsFile, JSON.stringify(configAnswers))
       this.log(
         `${chalk.greenBright(
           'Success!'
@@ -95,7 +95,8 @@ export default class Config extends Command {
     // Woot!
     this.log(
       `\nYou can now start using ${chalk.cyan('twitter-cl')}!
-      \nGo ahead and try the command: ${chalk.cyan.underline('tcl feed')}`
+      \nGo ahead and try the command: ${chalk.cyan('tcl tweet "Hello World!"')}
+      \nto send a test tweet!`
     )
   }
 }

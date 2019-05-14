@@ -10,7 +10,7 @@ export default class Stream extends Command {
     user: flags.string({
       char: 'u',
       description:
-        'Only show tweets by the given handles (or comma-seperated handles, no @ symbol)'
+        'Only show tweets by the given handles (or comma-separated handles, no @ symbol)'
     }),
     word: flags.string({
       char: 'w',
