@@ -21,7 +21,6 @@ $ tcl tweet "Hello World!"
 # ⛏️ Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g twitter-cl
 $ tcl COMMAND
@@ -33,17 +32,16 @@ USAGE
   $ tcl COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # 🔥 Commands
 
 <!-- commands -->
-
-- [`tcl config`](#tcl-config)
-- [`tcl help [COMMAND]`](#tcl-help-command)
-- [`tcl stream`](#tcl-stream)
-- [`tcl tweet TEXT`](#tcl-tweet-text)
+* [`tcl config`](#tcl-config)
+* [`tcl feed [FILE]`](#tcl-feed-file)
+* [`tcl help [COMMAND]`](#tcl-help-command)
+* [`tcl stream`](#tcl-stream)
+* [`tcl tweet TEXT`](#tcl-tweet-text)
 
 ## `tcl config`
 
@@ -61,6 +59,22 @@ DESCRIPTION
 ```
 
 _See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\config.ts)_
+
+## `tcl feed [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ tcl feed [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src\commands\feed.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\feed.ts)_
 
 ## `tcl help [COMMAND]`
 
@@ -111,5 +125,4 @@ OPTIONS
 ```
 
 _See code: [src\commands\tweet.ts](https://github.com/leeandher/twitter-cl/blob/v0.0.1/src\commands\tweet.ts)_
-
 <!-- commandsstop -->
