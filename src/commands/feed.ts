@@ -20,14 +20,27 @@ export default class Feed extends Command {
     const feed = await T.get('statuses/home_timeline', {
       count: flags.count || 30
     })
-    feed.map(({id_str, text, user}) => {
-      this.log(
-        `\n${chalk.cyan(
-          `${user.name} (@${user.screen_name})`
-        )}:\n${text}\n${chalk.grey(
-          `https://twitter.com/${user.screen_name}/status/${id_str}`
-        )}`
-      )
-    })
+    feed.map(
+      ({
+        id_str,
+        text,
+        user
+      }: {
+        id_str: string
+        text: string
+        user: {
+          name: string
+          screen_name: string
+        }
+      }) => {
+        this.log(
+          `\n${chalk.cyan(
+            `${user.name} (@${user.screen_name})`
+          )}:\n${text}\n${chalk.grey(
+            `https://twitter.com/${user.screen_name}/status/${id_str}`
+          )}`
+        )
+      }
+    )
   }
 }
