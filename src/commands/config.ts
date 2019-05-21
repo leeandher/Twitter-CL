@@ -78,7 +78,7 @@ export default class Config extends Command {
       this.config.windows ? '\\' : '/'
     }creds.json`
     try {
-      // fs.writeFileSync(credsFile, JSON.stringify(configAnswers))
+      fs.writeFileSync(credsFile, JSON.stringify(configAnswers))
       this.log(
         `${chalk.greenBright(
           'Success!'

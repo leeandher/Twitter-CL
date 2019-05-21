@@ -26,7 +26,7 @@ $ npm install -g twitter-cl
 $ tcl COMMAND
 running command...
 $ tcl (-v|--version|version)
-twitter-cl/1.0.1 win32-x64 node-v12.1.0
+twitter-cl/1.0.2 win32-x64 node-v12.1.0
 $ tcl --help [COMMAND]
 USAGE
   $ tcl COMMAND
@@ -58,7 +58,7 @@ DESCRIPTION
   NOTE: This requires API keys from https://developer.twitter.com!
 ```
 
-_See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.1/src\commands\config.ts)_
+_See code: [src\commands\config.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.2/src\commands\config.ts)_
 
 ## `tcl feed`
 
@@ -73,7 +73,7 @@ OPTIONS
   -h, --help         show CLI help
 ```
 
-_See code: [src\commands\feed.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.1/src\commands\feed.ts)_
+_See code: [src\commands\feed.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.2/src\commands\feed.ts)_
 
 ## `tcl help [COMMAND]`
 
@@ -106,7 +106,7 @@ OPTIONS
   -w, --word=word  Only show tweets containing the given word (or comma-separated words)
 ```
 
-_See code: [src\commands\stream.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.1/src\commands\stream.ts)_
+_See code: [src\commands\stream.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.2/src\commands\stream.ts)_
 
 ## `tcl tweet TEXT`
 
@@ -123,5 +123,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src\commands\tweet.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.1/src\commands\tweet.ts)_
+_See code: [src\commands\tweet.ts](https://github.com/leeandher/twitter-cl/blob/v1.0.2/src\commands\tweet.ts)_
 <!-- commandsstop -->
